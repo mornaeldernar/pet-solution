@@ -1,0 +1,32 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "author": "María González",
+      "date": "2024-03-15",
+      "content": "¡Excelente producto! Mi perro adora el sabor y la textura. Muy recomendado.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "author": "Carlos Rodríguez",
+      "date": "2024-03-10",
+      "content": "Buen precio y calidad. Mi mascota está más saludable desde que lo consume.",
+      "rating": 4
+    },
+    {
+      "id": "3",
+      "author": "Ana Martínez",
+      "date": "2024-03-05",
+      "content": "El mejor alimento que he probado para mi mascota. ¡100% recomendado!",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "author": "Juan Martínez",
+      "date": "2024-03-06",
+      "content": "El mejor alimento que he probado para mi mascota. ¡100% recomendado!",
+      "rating": 5
+    }
+  ]
+} 

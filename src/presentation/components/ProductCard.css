@@ -1,0 +1,463 @@
+
+
+.product-layout {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-images-container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-background);
+  padding: 0 clamp(2rem, 5vw, 4rem);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+.clickable-image:hover {
+  opacity: 0.95;
+}
+
+.image-thumbnails {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.thumbnail:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.thumbnail.active {
+  border-color: var(--accent-color);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-info h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--text-color);
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  color: var(--text-light);
+  line-height: 1.4;
+  margin: 1rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.tab:hover {
+  color: var(--text-color);
+}
+
+.tab.active {
+  color: var(--text-color);
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.section-content {
+  padding: 2rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.features, .benefits, .ingredients {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features h3, .benefits h3, .ingredients h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+li {
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  position: relative
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+li::before {
+  content: '';
+  position: absolute;
+  left: 15px; /* Posición del bullet */
+  top: 1.5rem; /* Alineado con el texto */
+  width: 20px; /* Tamaño de la huella */
+  height: 20px;
+  background-image: url('/images/huellita.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Huellitas verdes para la sección de Beneficios */
+.benefits-slide li::before {
+  filter: hue-rotate(140deg) saturate(1.8) brightness(1);
+}
+/* Huellitas rojas para la sección de Ingredientes */
+.ingredients-slide li::before {
+  filter: hue-rotate(330deg) saturate(2.2) brightness(1);
+}
+
+.availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+  padding: 4rem 2rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+}
+
+.store-logo {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.availability-text {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+}
+
+.store-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.store-link:hover {
+  background-color: var(--text-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .product-images-container {
+    height: 80vh;
+  }
+
+  .product-info {
+    padding: 2rem 1rem;
+  }
+
+  .section-tabs {
+    gap: 1rem;
+  }
+
+  .tab {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .availability {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-images-container {
+    height: 60vh;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+} 
+
+
+
+.product-images-container, 
+.product-info, 
+.availability {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* Evita que los cambios de altura del contenido afecten el paralaje */
+.product-card {
+  perspective: 1px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.product-quote {
+  margin: 25px 0;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #ff3333;
+  border-radius: 4px;
+}
+
+.product-quote p {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #ff3333;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+
+.product-slides {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Espacio entre diapositivas */
+  margin: 4rem 0;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  padding: 2rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--accent-color);
+}
+
+.features-slide {
+  border-left-color: #3498db; /* Azul */
+}
+
+.benefits-slide {
+  border-left-color: #2ecc71; /* Verde */
+}
+
+.ingredients-slide {
+  border-left-color: #e74c3c; /* Rojo */
+}
+
+.slide h3 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.slide-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide li {
+  opacity: 0;
+  transform: translateX(30px);
+  animation-name: fadeInRight;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.slide-visible li {
+  opacity: 0;
+  animation-name: fadeInRight;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .product-slides {
+    gap: 40px;
+  }
+  
+  .slide {
+    padding: 1.5rem;
+  }
+}
+
+.ingredients-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+.ingredients-list li::before {
+  display: none; /* Elimina la huellita solo para los ingredientes */
+}
+
+.ingredient-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-text {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .ingredient-image {
+    width: 80px;
+    height: 80px;
+  }
+}

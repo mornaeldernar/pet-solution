@@ -1,0 +1,268 @@
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 300px;
+  min-height: 40px;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+  padding: 0;
+  will-change: filter;
+  transition: all 300ms ease;
+  object-fit: contain;
+  display: block;
+}
+
+.logo.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em var(--secondary-color));
+  transform: scale(1.05);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  animation: fadeIn 300ms ease forwards;
+  min-width: 120px;
+}
+
+.logo-text .pet {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-color);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.logo-text .solution {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  --primary-color: #0099CC;
+  --secondary-color: #FFD700;
+  --accent-color: #00a2ff;
+  --text-color: #000000;
+  --text-light: #666666;
+  --background-color: #eff6ff;
+  --card-background: #faffdd;
+  --gradient-primary: linear-gradient(135deg, #0099CC 0%, #007399 100%);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.app-header {
+  background: var(--background-color);
+  color: black;
+  padding: 0.75rem 2rem;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  box-shadow: -4px -4px 15px var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+main {
+  flex: 1;
+  padding: 0;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.app-footer {
+  background: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  color: var(--background-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo-container {
+    max-width: 250px;
+  }
+
+  .logo {
+    width: 65px;
+  }
+
+  .logo-text {
+    min-width: 100px;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .logo-text .pet {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    letter-spacing: 0.15em;
+  }
+
+  .logo-text .solution {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    max-width: 200px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .logo-text {
+    padding: 0.3rem 0.5rem;
+    min-width: 80px;
+  }
+
+  .logo-text .pet {
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    letter-spacing: 0.1em;
+  }
+
+  .logo-text .solution {
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  }
+}
+
+.footer-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.no-alcohol {
+  color: var(--accent-color);
+  margin-top: 0;
+  font-weight: 500;
+}
+
+/* Cursores específicos que necesitas mantener */
+a, button, .clickable-image, .thumbnail, .carousel-button, .tab, .store-link {
+  cursor: url('/images/huellita.png') 15 15, pointer !important;
+}

@@ -1,0 +1,26 @@
+.scroll-dog-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  height: 190px;
+  background-image: url('/images/parque.png');
+  background-size: auto 100px;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  
+}
+
+.scroll-dog {
+  position: absolute;
+  width: 390px; /* 1503/4 - cada sprite horizontal mide esto */
+  height: 358px; /* 652/2 - cada sprite vertical mide esto */
+  background-image: url('/images/perrito_sprite.png');
+  background-size: 1539px 716px; /* Tamaño real de la imagen */
+  background-repeat: no-repeat;
+  transform: translateX(-120px) translateY(-10px) scale(0.10);
+}
+
+/* Quitamos la animación automática ya que ahora se controlará con el scroll */ 

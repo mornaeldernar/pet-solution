@@ -1,0 +1,27 @@
+{
+  "product": {
+    "id": "1",
+    "name": "Toallitas Húmedas para Mascotas",
+    "description": "Toallitas húmedas suaves y delicadas para la limpieza diaria de tu mascota. Formuladas con ingredientes naturales y sin alcohol para cuidar su piel.",
+    "price": 12.99,
+    "rating": 4.8,
+    "reviews": 128,
+    "features": [
+      "Limpia en profundidad sin lastimar el cutis.",
+      "Calma y humecta con Aloe Vera.",
+      "Sin alcohol, preserva la salud de tu mascota.",
+      "Bote hecho 100% de plastico reciclado."
+    ],
+    "benefits": [
+      "A base de ingredientes naturales",
+      "Antibacterial",
+      "Libre de químicos",
+      "Amigable con el medio ambiente"
+    ],
+    "ingredients": [
+      ["Cara y orejas","images/cara_orejas.png"],
+      ["Extremidades","images/extremidades.png"],
+      ["Pelaje y cuerpo","images/pelaje_cuerpo.png"]
+    ]
+  }
+} 
