@@ -2,26 +2,26 @@
   "product": {
     "id": "1",
     "name": "Toallitas Húmedas para Mascotas",
-    "description": "Toallitas húmedas suaves y delicadas para la limpieza diaria de tu mascota. Formuladas con ingredientes naturales y sin alcohol para cuidar su piel.",
+    "description": "Toallitas de limpieza desinfectantes, sin alcohol. <br>Elimina el 99.9% de bacterias y hongos.<br>Formulada con ingredientes naturales, cotiene crema humectante y Aloe vera.<br>Cuida su piel.",
     "price": 12.99,
     "rating": 4.8,
     "reviews": 128,
     "features": [
-      "Limpia en profundidad sin lastimar el cutis.",
+      "Elimina el 99.9% de bacterias y hongos",
       "Calma y humecta con Aloe Vera.",
       "Sin alcohol, preserva la salud de tu mascota.",
       "Bote hecho 100% de plastico reciclado."
     ],
     "benefits": [
-      "A base de ingredientes naturales",
-      "Antibacterial",
-      "Libre de químicos",
-      "Amigable con el medio ambiente"
+      "Ideal para limpiar las patas y los espacions entre las almohadillas de las mascotas.",
+      "Ayuda a eliminar la suciedad del pelaje y controlar los olores.",
+      "Los emolientes dejan el abrigo de pelo brillante y limpio.",
+      "Su formula comestible no presenta ningún riesgo para la mascota si la ingiere."
     ],
-    "ingredients": [
-      ["Cara y orejas","images/cara_orejas.png"],
-      ["Extremidades","images/extremidades.png"],
-      ["Pelaje y cuerpo","images/pelaje_cuerpo.png"]
+    "uso": [
+      ["Cara y orejas","images/cara_orejas.png","<h4>Limpieza de la cara</h4><ol><li>Utiliza una toallita pet Solution paño húmedo</li><li>Evita el contacto con ojos, nariz y oídos</li><li>Masajeale suavemente la cabeza</li><li>Limpia los pliegues de su cara, especialemtne alrededor de los ojos y la boca.</li><li>Asegúrate de que no quede humedad en la cara</li></ol><h4>Limpieza de las orejas</h4><ol><li>Revisa las orejas: Busca signos de infección o irritación antes de comenzar la limpieza</li><li>Masaea suavemente la base de la oreja con una toallita Pet Solution con movimiento regulares hasta que se desprenda el cerumen y la suciedad No ingresar a su pabelloón auricular.</li><li>Deja que sacuda la cabeza:Esto ayudará a que la suciedad salga del oído.</li><li>Limpia el exterior de la oreja: utiliza otra toallita Pet Solution para limpiar la parte externa de la oreja y la entrada del canal auditivo.</li><li>Nunca uses hisopos: pueden dañar el oído iterno.</li><li>Consulta con el veterinario: Si notas algún signo de infeccón o irritación, consulta con tu veterinario</li></ol>"],
+      ["Extremidades","images/extremidades.png","<h4>Pasos para limpiar las patas</h4><ol><li>Si las patas está muy sucias: <br>Si las patas están muy sucias, puedes usar un champú para perrors diluido en agua tibia. Frota suavemente las patas, especialmente entre los dedos y las almohadillas, y luego enjuaga con agua</li><li>Utiliza toallitas Pet Solution:<br>Estas toallitas son suaves y ayudan a eliminar la suciedad y los residuos de las patas de tu perro.</li><li>Sécalas con una toalla:<br>Después de limpiar, sécalas bien con una toalla limpia para evitar que resbalen o dejen huellas de humedad en la casa.</li><li>Sécalas con una toalla:<br>Desúes de limpiar, sécalas bien con una toalla limpia para evitar que resbalen o dejen huellas de humedad en la casa.</li><li>Revisa las patas:<br>Busca heridas, cortes o ampollas. Si encuentras alguna, lávala con agua y un antiséptico para mascotas y, si parece grave, consulta a tu veterinario.</li></ol><h4>Consideraciones adicionales:</h4><ol><li>No uses toallitas húmedas para humanos:<br>Estas pueden contener sustancias perjudiciales para la piel de tu perro</li><li>Corta las uñas regularmente:Esto ayudará a que las patas de tu perro estén más limpias y saludables.</li><li>Crea una estación de limpieza:<br>Coloca un recipiente con agua y toallas cerca de la puerta de entrada para facilitar la limpieza de las patas de tu perro después de cada paseo.</li></ol>"],
+      ["Pelaje y cuerpo","images/pelaje_cuerpo.png","<h4>Para mantener el pelo de tu perro limpio, puedes optar por el baño tradicional con champú para perros, cepillado regular y para una limpieza rápida o parcial con toallitas Pet Solution.</h4><br>Utiliza las toallitas húmedas Pet Solution diseñadas limpiar áreas específicas o para un alimpieza rápida. <br><ol><li>Empieza estirando la toallita de cabeza a la cola y pasa después en los flancos.</li><li>Busca de pasar si es posible, la toallita, siempre en el sentido del pelo, si un área es muy sucia puedes limpiarla en el sentido contrario del pelo, con movimientos suaves y armoniosos.</li><li>Coje sistemáticamente una toallita limpia para limpiar las zonas alrededor de sus órganos genitales y de su ano.</li></ol>"]
     ]
   }
 } 
