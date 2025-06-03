@@ -107,7 +107,7 @@ useEffect(() => {
               </ul>
             </div>
             
-            <div className="slide ingredients-slide" ref={ingredientsRef}>
+            <div className="slide ingredients-slide slide-visible">
               <h3>Uso</h3>
               <ul className="ingredients-list">
                 <li>
