@@ -16,8 +16,7 @@ export const ProductCard: React.FC = () => {
   // Imágenes del producto
   const productImages = [
     `${import.meta.env.BASE_URL}/images/producto.png`,
-    `${import.meta.env.BASE_URL}/images/pet-solution.png`,
-    `${import.meta.env.BASE_URL}/images/producto.png`
+    `${import.meta.env.BASE_URL}/images/pet_solution.png`
   ];
   
 
@@ -112,9 +111,8 @@ useEffect(() => {
               <h3>Uso</h3>
               <ul className="ingredients-list">
                 <li>
-                  
                   <img 
-                    src="images/cara_orejas.png" 
+                    src={`${import.meta.env.BASE_URL}/images/cara_orejas.png`}
                     alt="Cara y orejas"
                     className="ingredient-image"
                   />
@@ -139,11 +137,9 @@ useEffect(() => {
                     </ol>
                   </span>
                 </li>
-                
                 <li>
-                  
                   <img 
-                    src="images/extremidades.png" 
+                    src={`${import.meta.env.BASE_URL}/images/extremidades.png`} 
                     alt="Extremidades"
                     className="ingredient-image"
                   />
@@ -165,11 +161,9 @@ useEffect(() => {
                     </ol>
                   </span>
                 </li>
-                
                 <li>
-                  
                   <img 
-                    src="images/pelaje_cuerpo.png" 
+                    src={`${import.meta.env.BASE_URL}/images/pelaje_cuerpo.png`}
                     alt="Pelaje y cuerpo"
                     className="ingredient-image"
                   />
@@ -187,8 +181,6 @@ useEffect(() => {
               </ul>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>

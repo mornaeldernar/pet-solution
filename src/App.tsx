@@ -24,7 +24,7 @@ function App() {
         <div className="logo-container">
           {!logoError && (
             <img 
-              src={`${import.meta.env.BASE_URL}/images/pet-solution.png`} 
+              src={`${import.meta.env.BASE_URL}/images/pet_solution.png`} 
               alt="Pet SOLUTION Logo" 
               className={`logo ${logoLoaded ? 'loaded' : 'loading'}`}
               onLoad={handleLogoLoad}
